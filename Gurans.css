@@ -37,6 +37,10 @@ nav{
     color: #3375EC;
     border: 1px solid #3375EC;
 }
+.fa-bars{
+    color: white;
+    display: none;
+}
 .nav-ul{
     display: flex;
     justify-content: space-between;
@@ -110,20 +114,34 @@ header{
     .banner-content{
         /* background-color: red; */
         width: 80%;
-        margin: 0px;
+        margin: 40px auto;
     }
-    .sign{
+    .fa-horizontal-rule{
         display: none;
     }
     .nav-ul a{
         font-size: 8px;
     }
     nav{
-        background-color: brown;
         justify-content: space-between;
+        padding: 0px 10px;
+        height: 60px;
     }
     .nav-ul{
-        width: 100%;
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+    .nav-btn{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .sign{
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 4px;
     }
     header{
         font-size: 20px;
@@ -139,9 +157,6 @@ header{
     .logo{
         height: 50px;
         width: 60px;
-    }
-    .fa-horizontal-rule{
-        width: 100px;
     }
 }
 @media (min-width:481px) and (max-width:768px){
@@ -159,20 +174,35 @@ header{
     #read,#contact{
         font-size: 12px;
     }
-    .sign{
-        display: none;
-    }
-    .fa-horizontal-rule{
-        width: 100px;
-        margin-top: 15px;
-    }
     .banner-content{
         /* background-color: red; */
         width: 60%;
         margin: 0px auto;
     }
+    .nav-ul{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+    .nav-btn{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .sign{
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 4px;
+    }
     nav{
-        width: 10%;
+        justify-content: space-between;
+        padding: 0px 10px;
+        height: 60px;
+    }
+    .logo{
+        height: 50px;
+        width: 52px;
     }
 }
 @media (min-width:769px) and (max-width:1024px){

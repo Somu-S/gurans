@@ -7,7 +7,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 .banner{
-    background-image: url(../photosrc/Banner-compressed.jpg);
+    background-image: url(./photosrc/Banner-compressed.jpg);
     background-repeat: no-repeat;
     height: 708px;
     background-size: cover;

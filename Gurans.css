@@ -313,6 +313,9 @@ header{
     .fa-desktop,.fa-chart-line,.fa-person-chalkboard,.fa-chalkboard-user,.fa-list-ol,.fa-magnifying-glass,.fa-comment-dollar,.fa-building{
         font-size: 40px;
     }
+    .abt-container header{
+        width: 70%;
+    }
 }
 @media (min-width:1025px) and (max-width:1200px){
     .services-card-wrapper{
@@ -990,6 +993,9 @@ header{
     }
     .nxt-stp-txt{
         font-size: 16px;
+    }
+    .act-detail{
+        width: 90%;
     }
 }
 @media (min-width:769px) and (max-width:1024px){

@@ -215,6 +215,9 @@ header{
     .small-content{
         width: 100%;
     }
+    .fa-bars{
+        display: none;
+    }
 }
 @media (min-width:1025px) and (max-width:1200px){
     .nav-ul{
@@ -224,6 +227,9 @@ header{
         margin: 70px auto;
         width: 70%;
     }
+    .fa-bars{
+        display: none;
+    }
 }
 @media (min-width:1201px){
     .nav-ul{
@@ -232,6 +238,9 @@ header{
     .banner-content{
         margin: 70px auto;
         width: 60%;
+    }
+    .fa-bars{
+        display: none;
     }
 }
 /* our services strts here */

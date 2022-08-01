@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 html,body{
-    margin: 0px;
-    padding: 0px;
     overflow-x: hidden;
 }
 *{
@@ -12,7 +10,7 @@ html,body{
     font-family: 'Open Sans', sans-serif;
 }
 .banner{
-    background-image: url(./photosrc/Banner-compressed.jpg);
+    background-image: url(photosrc/Banner-compressed.jpg);
     background-repeat: no-repeat;
     height: 708px;
     background-size: cover;
@@ -44,7 +42,14 @@ nav{
 }
 .fa-bars{
     color: white;
+}
+.btn{
     display: none;
+}
+.nav-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .nav-ul{
     display: flex;
@@ -135,14 +140,6 @@ header{
     .nav-ul{
         display: none;
     }
-    .fa-bars{
-        display: block;
-    }
-    .nav-btn{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
     .sign{
         font-size: 12px;
         padding: 5px;
@@ -162,6 +159,9 @@ header{
     .logo{
         height: 50px;
         width: 60px;
+    }
+    .btn{
+        display: block;
     }
 }
 @media (min-width:481px) and (max-width:768px){
@@ -187,14 +187,6 @@ header{
     .nav-ul{
         display: none;
     }
-    .fa-bars{
-        display: block;
-    }
-    .nav-btn{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
     .sign{
         font-size: 12px;
         padding: 5px;
@@ -209,6 +201,9 @@ header{
         height: 50px;
         width: 52px;
     }
+    .btn{
+        display: block;
+    }
 }
 @media (min-width:769px) and (max-width:1024px){
     .nav-ul{
@@ -220,7 +215,7 @@ header{
     .small-content{
         width: 100%;
     }
-    .fa-bars{
+    .btn{
         display: none;
     }
 }
@@ -232,7 +227,7 @@ header{
         margin: 70px auto;
         width: 70%;
     }
-    .fa-bars{
+    .btn{
         display: none;
     }
 }
@@ -244,7 +239,7 @@ header{
         margin: 70px auto;
         width: 60%;
     }
-    .fa-bars{
+    .btn{
         display: none;
     }
 }
@@ -346,7 +341,7 @@ header{
     padding: 80px 0px;
 }
 .img {
-    background-image: url(../photosrc/about-compressed.jpg);
+    background-image: url(photosrc/about-compressed.jpg);
     height: 422px;
     width: 600px;
     background-size: cover;
@@ -500,7 +495,7 @@ header{
 
 /* why us starts here */
 .why-img{
-    background-image: url(../photosrc/why-us-compress.jpg);
+    background-image: url(photosrc/why-us-compress.jpg);
     width: 600px;
     height: 434px;
     background-size: cover;
@@ -628,7 +623,7 @@ header{
 
 /* what we work starts here */
 .our-work-container{
-    background-image: url(../photosrc/what-we-work-compress.jpg);
+    background-image: url(photosrc/what-we-work-compress.jpg);
     height: 504px;
     background-size: cover;
     background-position: center;
@@ -698,7 +693,7 @@ header{
 }
 /* company register starts here */
 .c-reg-img{
-    background-image: url(../photosrc/company-registeraion-compressed.jpg);
+    background-image: url(photosrc/company-registeraion-compressed.jpg);
     height: 400px;
     width: 600px;
     background-size: cover;
@@ -909,7 +904,7 @@ header{
     padding: 20px 40px;
 }
 .act-img{
-    background: url(../photosrc/account-imgcompresssed.jpg) no-repeat;
+    background: url(photosrc/account-imgcompresssed.jpg) no-repeat;
     height: 420px;
     width: 600px;
     background-size: cover;
@@ -1071,18 +1066,18 @@ header{
 .team-img{
     height: 227px;
     width: 265px;
-    background-image: url(../photosrc/pexels-christina-morillo-1181690-compress.jpg);
+    background-image: url(photosrc/pexels-christina-morillo-1181690-compress.jpg);
     background-size: cover;
     background-position: center;
 }
 .team-two{
-    background-image: url(../photosrc/pexels-andrea-piacquadio-3769021-compress.jpg);
+    background-image: url(photosrc/pexels-andrea-piacquadio-3769021-compress.jpg);
 }
 .team-three{
-    background-image: url(../photosrc/pexels-fauxels-3184611-compress.jpg);
+    background-image: url(photosrc/pexels-fauxels-3184611-compress.jpg);
 }
 .team-four{
-    background-image: url(../photosrc/pexels-moose-photos-1586996-compress.jpg);
+    background-image: url(photosrc/pexels-fauxels-3184611-compress.jpg);
 }
 .team-name{
     font-size: 22px;
@@ -1205,7 +1200,7 @@ header{
     justify-content: space-evenly;
 }
 .voice-img{
-    background-image: url(../photosrc/CEO2.png);
+    background-image: url(photosrc/CEO2.png);
     background-repeat: no-repeat;
     height: 545px;
     width: 500px;

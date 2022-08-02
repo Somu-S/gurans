@@ -98,12 +98,13 @@ nav{
 }
 .contact-wrapper{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto ;
     place-items: center;
     max-width: 70%;
     margin: 1rem auto;
     position: relative;
     bottom: 10rem;
+    gap: 3rem 0;
 }
 .con-card{
     background-color: white;
@@ -198,7 +199,6 @@ label{
 footer{
     background-color: rgba(246, 246, 250, 1);
     padding: 8rem 8rem 3rem 8rem;
-    border-top: .5rem solid #0E5D97;
 }
 .footer-container{
     display: flex;

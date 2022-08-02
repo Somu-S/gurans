@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;
+}
+html,body{
+    overflow-x: hidden;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.nav-li,.nav-li a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.4rem;
+    color: #2c243b;
+}
+.logo{
+    height: 8.5rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    /* background-color: #3375ec; */
+}
+.nav-li a:hover{
+    color: #3375EC;
+}
+.sign:hover{
+    color: #3375EC;
+    border: .1rem solid #3375EC;
+}
+.fa-bars{
+    color: white;
+    font-style: 1.6rem;
+}
+.btn{
+    display: none;
+}
+.nav-btn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.nav-ul{
+    display: flex;
+    gap: 6rem;
+}
+.nav-li a:hover,.sign:hover{
+    color: #3375ec;
+}
+.sign{
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    padding: 1rem;
+    border-radius: 1.6rem;
+    background-color: transparent;
+    border: 0.1rem solid ;
+}
+.active a{
+    color: #3375EC;
+}
+
+/* banner starts here */
+.banner{
+    background-color: #3375ec;
+    padding: 10rem;
+}
+.banner-header{
+    font-size: 3.9rem;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 60rem;
+    color: white;
+    max-width: 40%;
+    margin: 0rem auto;
+}
+/* banner ends here */
+.con-card i{
+    font-size: 3rem;
+    color: #3375EC;
+}
+.con-header{
+    font-size: 2.4rem;
+    margin: 1rem 0;
+    color: black;
+}
+.con-detail{
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+}
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-items: center;
+    max-width: 70%;
+    margin: 1rem auto;
+    position: relative;
+    bottom: 10rem;
+}
+.con-card{
+    background-color: white;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: 20rem;
+    box-shadow: .1rem .4rem .6rem #b0b6c0;
+}
+
+.field-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #3375EC;
+    padding: 4rem 0 4rem 4rem;
+    align-items: center;
+}
+.header{
+    font-size: 3.9rem;
+    font-weight: 500;
+    color: white;
+}
+.get-detail{
+    font-size: 2.4rem;
+    margin: 2rem 0;
+    color: white;
+}
+.txt{
+    font-size: 1.4rem;
+    color: #b0b6c0;
+}
+.get-container{
+    max-width: 40%;
+}
+.input-ctrl{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+label{
+    font-size: 2.2rem;
+    color: white;
+}
+.input-ctrl input{
+    border: none;
+    border-bottom: .2rem solid white;
+    outline: none;
+    background-color: transparent;
+}
+.input-ctrl input::placeholder{
+    font-size: 1.2rem;
+    color: white;
+}
+.message{
+    height: 20rem;
+    width: 50rem;
+    padding: 1rem;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    border: .2rem solid white;
+    border-radius: .5rem;
+}
+.message::placeholder{
+    color: white;
+}
+.submit input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    color: white;
+    border: .2rem solid white;
+    background-color: transparent;
+    cursor: pointer;
+}
+.submit input:hover{
+    background-color: crimson;
+    border: none;
+}
+.icons{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.icons i{
+    color: white;
+}
+
+footer{
+    background-color: rgba(246, 246, 250, 1);
+    padding: 8rem 8rem 3rem 8rem;
+    border-top: .5rem solid #0E5D97;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+}
+.first-row{
+    display: flex;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-links{
+    margin: 1rem 0rem;
+    color: #8491A5;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+.footer-links a{
+    color: #8491A5;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+.fa-location-dot,.fa-phone,.fa-envelope{
+    color: black;
+    margin-right: .5rem;
+}
+.fo-header{
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+}
+.email{
+    border: none;
+    background-color: #3375EC;
+    padding: 1rem 0rem 1rem 3.7rem;
+    margin: 1rem 0rem;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.email::placeholder{
+    color: white;
+}
+.sub{
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #8491A5;
+    padding: 1rem;
+    border: .1rem solid #3375EC;
+    font-size: 1.2rem;
+}
+.copywright{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0rem auto;
+    font-size: 1.4rem;
+    color: #8491A5;
+    margin-top: 15rem;
+}
+.fa-facebook,.fa-instagram,.fa-twitter,.fa-linkedin{
+    font-size: 2.4rem;
+    color: #0E5D97;
+}

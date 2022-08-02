@@ -40,6 +40,9 @@ nav{
     color: #3375EC;
     border: 1px solid #3375EC;
 }
+.active{
+    color: #3375EC;
+}
 .fa-bars{
     color: white;
 }

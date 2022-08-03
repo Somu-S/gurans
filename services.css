@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;
+}
+html,body{
+    overflow-x: hidden;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.nav-li,.nav-li a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.4rem;
+    color: #2c243b;
+}
+.logo{
+    height: 8.5rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    /* background-color: #3375ec; */
+}
+.nav-li a:hover{
+    color: #3375EC;
+}
+.sign:hover{
+    color: #3375EC;
+    border: .1rem solid #3375EC;
+}
+.fa-bars{
+    color: white;
+    font-style: 1.6rem;
+}
+.btn{
+    display: none;
+}
+.nav-btn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.nav-ul{
+    display: flex;
+    gap: 6rem;
+}
+.nav-li a:hover,.sign:hover{
+    color: #3375ec;
+}
+.sign{
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    padding: 1rem;
+    border-radius: 1.6rem;
+    background-color: transparent;
+    border: 0.1rem solid ;
+}
+.active a{
+    color: #3375EC;
+}
+
+/* banner starts here */
+.banner{
+    background-color: #3375ec;
+    padding: 10rem;
+}
+.banner-header{
+    font-size: 3.9rem;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 60rem;
+    color: white;
+    max-width: 40%;
+    margin: 0rem auto;
+}
+/* banner ends here */
+.service-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background-color: red;
+    max-width: 70%;
+    margin: 0px auto;
+}
+.service-detail{
+    padding: 0 2rem;
+}
+.service-img img{
+    height: 30rem;
+}
+.service-title{
+    font-size: 3.2rem;
+}
+.txt{
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}

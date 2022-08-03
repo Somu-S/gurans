@@ -25,7 +25,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 1rem;
+    padding: 0rem 4rem;
     /* background-color: #3375ec; */
 }
 .nav-li a:hover{
@@ -67,135 +67,142 @@ nav{
     color: #3375EC;
 }
 
-/* banner starts here */
-.banner{
-    background-color: #3375ec;
-    padding: 10rem;
+.c-reg-img{
+    background-image: url(photosrc/company-registeraion-compressed.jpg);
+    height: 40rem;
+    width: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.banner-header{
-    font-size: 3.9rem;
-    text-align: center;
-    padding: 1rem;
-    font-weight: 60rem;
-    color: white;
-    max-width: 40%;
-    margin: 0rem auto;
-}
-/* banner ends here */
-.con-card i{
-    font-size: 3rem;
-    color: #3375EC;
-}
-.con-header{
-    font-size: 2.4rem;
-    margin: 1rem 0;
-    color: black;
-}
-.con-detail{
+.com-reg-title{
     font-size: 1.2rem;
-    text-align: center;
-    color: black;
+    color: #3375EC;
+    background-color: #E5EBF7;
+    width: fit-content;
+    padding: 1.5rem 2rem;
+    border-radius: 1.6rem;
 }
-.contact-wrapper{
-    display: grid;
-    grid-template-columns: auto auto auto auto ;
-    place-items: center;
-    max-width: 70%;
-    margin: 1rem auto;
-    position: relative;
-    bottom: 10rem;
-    gap: 3rem 0;
+.com-header{
+    font-size: 3.9rem;
+    color: white;
+    font-weight: 40;
+    margin: 2.5rem 0rem;
 }
-.con-card{
+.com-det-one,.com-det-two{
+    font-size: 1.7rem;
+    color: #E5EBF7;
+}
+.com-det-two{
+    margin: 2.5rem 0rem;
+}
+.register-btn{
+    color: #3375ec;
     background-color: white;
-    width: 25rem;
+    font-size: 1.4rem;
+    border: none;
+    padding: 1rem 2.2rem;
+    border-radius: 2.2rem;
+}
+.register-btn:hover{
+    background-color: #dc3545;
+    cursor: pointer;
+    color: white;
+}
+.c-reg-cont{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8rem 0rem;
+    background-color: #3375ec;
+}
+.com-reg-detail{
+    width: 60rem;
+}
+.fa-shop{
+    color: #3375ec;
+    font-size: 3.9rem;
+}
+.we-header{
+    font-size: 3.9rem;
+    width: fit-content;
+    margin: 4rem auto;
+}
+.name{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+.reg-card{
+    width: 20rem;
+    height: 15rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 2rem;
-    height: 20rem;
+    padding: 1rem;
     box-shadow: .1rem .4rem .6rem #b0b6c0;
 }
-
-.field-container{
+.reg-card-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    place-items: center;
+    gap: 2rem 0;
+    max-width: 80%;
+    margin: 2rem auto;
+}
+.icon img{
+    height: 5rem;
+}
+.doc-img img{
+    height: 50rem;
+}
+.doc-wrapper{
     display: flex;
-    justify-content: space-around;
-    background-color: #3375EC;
-    padding: 4rem;
+    justify-content: center;
     align-items: center;
+    padding: 4rem;
+    flex-direction: row-reverse;
+    /* background-color: blue; */
 }
-.header{
+.doc-header{
     font-size: 3.9rem;
-    font-weight: 500;
-    color: white;
 }
-.get-detail{
+.co-li{
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    padding: 1rem 0;
+}
+.doc-detail{
+    width: 40%;
+}
+.table-header{
     font-size: 2.4rem;
-    margin: 2rem 0;
-    color: white;
+    font-weight: 600;
+}
+table,td,th{
+    border: 1px solid black;
+    font-size: 1.6rem;
+    border-spacing: 0;
+    text-align: left;
+}
+td,th{
+    padding: 1rem;
+}
+.table-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
 }
 .txt{
     font-size: 1.4rem;
-    color: #b0b6c0;
 }
-.get-container{
-    max-width: 40%;
+.com-title{
+    font-size: 1.8rem;
+    margin: 2rem 0;
 }
-.input-ctrl{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0;
-}
-label{
-    font-size: 2.2rem;
-    color: white;
-}
-.input-ctrl input{
-    border: none;
-    border-bottom: .2rem solid white;
-    outline: none;
-    background-color: transparent;
-}
-.input-ctrl input::placeholder{
-    font-size: 1.2rem;
-    color: white;
-}
-.message{
-    height: 20rem;
-    width: 50rem;
-    padding: 1rem;
-    outline: none;
-    color: white;
-    background-color: transparent;
-    border: .2rem solid white;
-    border-radius: .5rem;
-}
-.message::placeholder{
-    color: white;
-}
-.submit input{
-    width: 100%;
-    padding: 1rem;
-    border-radius: .5rem;
-    margin-top: 1rem;
-    color: white;
-    border: .2rem solid white;
-    background-color: transparent;
-    cursor: pointer;
-}
-.submit input:hover{
-    background-color: crimson;
-    border: none;
-}
-.icons{
-    margin-top: 2rem;
-    display: flex;
-    gap: 1rem;
-}
-.icons i{
-    color: white;
-}
-
 footer{
     background-color: rgba(246, 246, 250, 1);
     padding: 8rem 8rem 3rem 8rem;
@@ -271,12 +278,10 @@ footer{
     display: flex;
     gap:1rem
 }
+
 @media (max-width:768px){
     html{
         font-size: 30%;
-    }
-    .banner-header{
-        max-width: 100%;
     }
     .nav-ul{
         display: none;
@@ -287,51 +292,55 @@ footer{
     .fa-bars{
         color: black;
     }
-    .contact-wrapper{
+    .team-card-wrapper{
         grid-template-columns: auto auto;
-    }
-    .field-container{
-        flex-direction: column;
-    }
-    .get-container{
-        max-width: 90%;
-        margin-bottom: 4rem;
-    }
-    .message{
-        width: 70rem;
     }
     .footer-container{
         display: grid;
         grid-template-columns: auto auto;
         gap: 3rem 5rem;
     }
+    .c-reg-cont{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    .reg-card-wrapper{
+        max-width: 100%;
+        grid-template-columns: auto auto auto;
+    }
+    .doc-wrapper{
+        flex-direction: column;
+    }
+    .doc-detail{
+        width: 100%;
+    }
 }
 @media (min-width:481px) and (max-width:768px){
     html{
         font-size: 35%;
+    }
+    .c-reg-cont{
+        flex-direction: row;
+        padding: 1rem;
     }
 }
 @media (min-width:769px) and (max-width:1024px){
     html{
         font-size: 40%;
     }
-    .contact-wrapper{
-        grid-template-columns: auto auto;
-    }
 }
 @media (min-width:1025px) and (max-width:1200px){
     html{
         font-size: 50%;
     }
-    .contact-wrapper{
-        gap: 3rem;
-    }
 }
-@media (min-width:1200px){
+@media (min-width:1201px){
     html{
         font-size: 62.5%;
     }
-    .contact-wrapper{
-        max-width: 90%;
+    .reg-card-wrapper{
+        gap: 2rem;
     }
 }

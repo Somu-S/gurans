@@ -63,7 +63,7 @@ nav{
     background-color: transparent;
     border: 0.1rem solid ;
 }
-.active{
+.active a{
     color: #3375EC;
 }
 

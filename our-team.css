@@ -82,120 +82,37 @@ nav{
     margin: 0rem auto;
 }
 /* banner ends here */
-.con-card i{
-    font-size: 3rem;
-    color: #3375EC;
+.team-img img{
+    max-height: 20rem;
 }
-.con-header{
-    font-size: 2.4rem;
-    margin: 1rem 0;
-    color: black;
-}
-.con-detail{
-    font-size: 1.2rem;
-    text-align: center;
-    color: black;
-}
-.contact-wrapper{
+.team-card-wrapper{
     display: grid;
-    grid-template-columns: auto auto auto auto ;
-    place-items: center;
-    max-width: 70%;
-    margin: 1rem auto;
-    position: relative;
-    bottom: 10rem;
-    gap: 3rem 0;
-}
-.con-card{
-    background-color: white;
-    width: 25rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    height: 20rem;
-    box-shadow: .1rem .4rem .6rem #b0b6c0;
-}
-
-.field-container{
-    display: flex;
-    justify-content: space-around;
-    background-color: #3375EC;
-    padding: 4rem;
-    align-items: center;
-}
-.header{
-    font-size: 3.9rem;
-    font-weight: 500;
-    color: white;
-}
-.get-detail{
-    font-size: 2.4rem;
-    margin: 2rem 0;
-    color: white;
-}
-.txt{
-    font-size: 1.4rem;
-    color: #b0b6c0;
-}
-.get-container{
-    max-width: 40%;
-}
-.input-ctrl{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0;
-}
-label{
-    font-size: 2.2rem;
-    color: white;
-}
-.input-ctrl input{
-    border: none;
-    border-bottom: .2rem solid white;
-    outline: none;
-    background-color: transparent;
-}
-.input-ctrl input::placeholder{
-    font-size: 1.2rem;
-    color: white;
-}
-.message{
-    height: 20rem;
-    width: 50rem;
-    padding: 1rem;
-    outline: none;
-    color: white;
-    background-color: transparent;
-    border: .2rem solid white;
-    border-radius: .5rem;
-}
-.message::placeholder{
-    color: white;
-}
-.submit input{
-    width: 100%;
-    padding: 1rem;
-    border-radius: .5rem;
-    margin-top: 1rem;
-    color: white;
-    border: .2rem solid white;
-    background-color: transparent;
-    cursor: pointer;
-}
-.submit input:hover{
-    background-color: crimson;
-    border: none;
-}
-.icons{
-    margin-top: 2rem;
-    display: flex;
+    grid-template-columns: auto auto auto;
     gap: 1rem;
+    place-items: center;
+    margin: 6rem 0;
+    gap: 5rem 0;
 }
-.icons i{
-    color: white;
+.team-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .1rem .4rem .6rem #b0b6c0;
+    padding-bottom: 2rem;
 }
-
+.team-name{
+    font-size: 2.4rem;
+    color: #3375ec;
+}
+.team-pos,.contact{
+    font-size: 1.4rem;
+    color: #2c243b;
+    margin-top: 1rem;
+}
+.contact i{
+    color: #3375ec;
+}
 footer{
     background-color: rgba(246, 246, 250, 1);
     padding: 8rem 8rem 3rem 8rem;
@@ -275,9 +192,6 @@ footer{
     html{
         font-size: 30%;
     }
-    .banner-header{
-        max-width: 100%;
-    }
     .nav-ul{
         display: none;
     }
@@ -287,18 +201,8 @@ footer{
     .fa-bars{
         color: black;
     }
-    .contact-wrapper{
+    .team-card-wrapper{
         grid-template-columns: auto auto;
-    }
-    .field-container{
-        flex-direction: column;
-    }
-    .get-container{
-        max-width: 90%;
-        margin-bottom: 4rem;
-    }
-    .message{
-        width: 70rem;
     }
     .footer-container{
         display: grid;
@@ -315,23 +219,14 @@ footer{
     html{
         font-size: 40%;
     }
-    .contact-wrapper{
-        grid-template-columns: auto auto;
-    }
 }
 @media (min-width:1025px) and (max-width:1200px){
     html{
         font-size: 50%;
     }
-    .contact-wrapper{
-        gap: 3rem;
-    }
 }
-@media (min-width:1200px){
+@media (min-width:1201px){
     html{
         font-size: 62.5%;
-    }
-    .contact-wrapper{
-        max-width: 90%;
     }
 }

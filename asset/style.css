@@ -607,7 +607,7 @@ header{
     font-size: 1.2rem;
     background-color: rgba(229, 235, 247, 0.2);
     width: fit-content;
-    padding: 1.rem 2.7rem;
+    padding: 1rem 2.7rem;
     border-radius: 1.6rem;
 }
 .voice-header{
@@ -813,6 +813,13 @@ footer{
     color: white;
     max-width: 40%;
     margin: 0rem auto;
+}
+.banner p{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 60%;
+    margin: auto;
 }
 .about-content-container{
     display: flex;
@@ -1348,6 +1355,7 @@ td,th{
 }
 .industries-title,.project-title{
     font-size: 3.2rem;
+    font-weight: 600;
 }
 .industries-detail-txt,.project-txt{
     font-size: 1.8rem;
@@ -1373,8 +1381,39 @@ td,th{
     flex-direction: row-reverse;
 }
 
-
-
+/* voice of ceo */
+.voice-container{
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    gap: 2rem;
+}
+.voice-text-wrapper span{
+    font-size: 3.9rem;
+}
+.voice-text-wrapper p{
+    font-size: 1.6rem;
+    margin: 2rem 0;
+}
+.voice-ceo span{
+    font-size: 3.5rem;
+    color: #3375ec;
+    font-weight: 600;
+    text-align: right;
+}
+.voice-ceo p{
+    font-size: 1.8rem;
+    margin: 0 0 0;
+    text-align: right;
+}
+.voice-ceo{
+    margin-left: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+.ceo-img{
+    max-height: 60rem;
+}
 
 @media (max-width:768px){
     html{
@@ -1468,7 +1507,9 @@ td,th{
     .training-pg-detail{
         max-width: 90%;
     }
-
+    .voice-container{
+        flex-direction: column-reverse;
+    }
 }
 @media (min-width:481px) and (max-width:768px){
     html{
@@ -1493,7 +1534,7 @@ td,th{
     .training-pg-container{
         flex-direction: row-reverse;
     }
-    .training-row{
+    .training-row,.voice-container{
         flex-direction:  row;
     }
     .industries-container{

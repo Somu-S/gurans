@@ -38,7 +38,7 @@ nav{
     border: .1rem solid #3375EC;
 }
 .fa-bars{
-    color: white;
+    color: black;
     font-style: 1.6rem;
 }
 .btn{
@@ -47,7 +47,7 @@ nav{
 .nav-btn{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 .nav-ul{
     display: flex;
@@ -90,6 +90,44 @@ nav{
     background-color: crimson;
     color: white;
 }
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 28rem;
+    top: 0;
+    right: 0;
+    background-color: #3375ec;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .sidepanel a {
+    padding: .8rem .8rem .8rem 3.2rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #262F3C;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2.5rem;
+    font-size: 3.6rem;
+  }
+  .btn button{
+    background-color: transparent;
+    border: none;
+  }
+
 
 /* home page */
 .home-banner{
@@ -829,7 +867,35 @@ footer{
     color: white;
     border: white;
 }
-
+.our-history-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f6f6fa;
+    padding: 4rem;
+}
+.our-history-header{
+    width: 40%;
+}
+.our-history-header span{
+    font-size: 3.9rem;
+}
+.our-history-header p,.history-txt{
+    font-size: 1.6rem;
+}
+.history-detail{
+    width: 40%;
+}
+.history-card span{
+    color: #3375ec;
+}
+.history-card p{
+    font-size: 2.4rem;
+}
+.history-card{
+    padding: 2rem;
+}
 /* about us page ends here */
 
 
@@ -1226,6 +1292,7 @@ td,th{
     display: flex;
     gap: 1rem;
     align-items: center;
+    font-size: 1.2rem;
 }
 .sign-in-form{
     display: flex;
@@ -1263,6 +1330,49 @@ td,th{
 .sign-input-wrapper{
     width: 25rem;
 }
+/* industries page starts here */
+.industries-container,.projects-wrapper{
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 90%;
+    margin: auto;
+}
+.industries-img img ,.project-img img{
+    height: 40rem;
+}
+.industries-detail,.project-detail{
+    width: 100%;
+    padding: 4rem;
+}
+.industries-title,.project-title{
+    font-size: 3.2rem;
+}
+.industries-detail-txt,.project-txt{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+.projects-header{
+    font-size: 3.4rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.project-title{
+    color: #3375EC;
+}
+.project-detail ul{
+    margin-left:2rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+.project-detail li{
+    padding: 1rem 0;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
 
 
 
@@ -1352,12 +1462,13 @@ td,th{
     .our-service-container,.inverse{
         flex-direction: column;
     }
-    .training-pg-container{
+    .training-pg-container,.industries-container,.projects-wrapper{
         flex-direction: column;
     }
     .training-pg-detail{
         max-width: 90%;
     }
+
 }
 @media (min-width:481px) and (max-width:768px){
     html{
@@ -1384,6 +1495,9 @@ td,th{
     }
     .training-row{
         flex-direction:  row;
+    }
+    .industries-container{
+        flex-direction: column;
     }
 }
 @media (min-width:769px) and (max-width:1024px){

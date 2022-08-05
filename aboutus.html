@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
     <link rel="stylesheet" href="asset/style.css">
+    <script src="asset/js/index.js"></script>
     <script src="https://kit.fontawesome.com/9cfa251def.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,28 +19,38 @@
             <li class="nav-li dropdown-btn">
                 <a href="services.html">Our Services</a>
                 <div class="dropdown-content">
-                    <a href="#">Market-analysis</a>
-                    <a href="#">Fund Management</a>
-                    <a href="#">PR & Marketing</a>
-                    <a href="#">Accounting Training</a>
-                    <a href="#">Business planning</a>
-                    <a href="#">Audit</a>
-                    <a href="#">Consulting</a>
-                    <a href="#">Company Registeraion</a>
+                    <a href="market.html">Market-analysis</a>
+                    <a href="fund.html">Fund Management</a>
+                    <a href="marketing.html">PR & Marketing</a>
+                    <a href="training.html">Accounting Training</a>
+                    <a href="planning.html">Business planning</a>
+                    <a href="audit.html">Audit</a>
+                    <a href="consultant.html">Consulting</a>
+                    <a href="reg.html">Company Registeraion</a>
                 </div>
            </li>
             <li class="nav-li"><a href="contact.html">Contact Us</a></li>
-            <li class="nav-li"><a href="#">Industries</a></li>
+            <li class="nav-li"><a href="industries.html">Industries</a></li>
         </ul>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="services.html">Our Services</a>
+            <a href="contact.html">Our Contacts</a>
+            <a href="our-team.html">Our Team</a>
+          </div>
         <div class="nav-btn">
             <div class="btn">
-                <i class="fa-solid fa-bars"></i>
+                <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
             </div>
-            <button class="sign">sign in</button>
+            <a href="signup.html">
+                <button class="sign">sign in</button>
+            </a>
         </div>
     </nav>
     <!-- banner start here -->
-    <div class="banner">
+    <div class="banner" style="background-image: url(asset/photosrc/aboutuspage.jpg);">
         <div class="banner-header">
             A few word about Gurans Business Consultant
         </div>
@@ -57,6 +68,7 @@
             <img src="asset/photosrc/aboutus-pg-2.jpg">
         </div>
     </div>
+
     <div class="about">
         <div class="img">
         </div>
@@ -72,6 +84,88 @@
             </ul>
         </div>
     </div>
+
+    <div class="our-team-container">
+        <div class="our-team-title">Meet Our Team</div>
+        <div class="our-team-header">
+            Meet Our Professional Team
+        </div>
+        <div class="team-card-wrapper">
+            <div class="team-card">
+                <div class="team-img"></div>
+                <div class="team-name">Gregoy Setin</div>
+                <div class="team-pos">office Manager</div>
+            </div>
+            <div class="team-card">
+                <div class="team-img team-two"></div>
+                <div class="team-name">Gregoy Setin</div>
+                <div class="team-pos">Accountant</div>
+            </div>
+            <div class="team-card">
+                <div class="team-img team-three"></div>
+                <div class="team-name">Gregoy Setin</div>
+                <div class="team-pos">Marketing Manager</div>
+            </div>
+            <div class="team-card">
+                <div class="team-img team-four"></div>
+                <div class="team-name">Gregoy Setin</div>
+                <div class="team-pos">Consultant</div>
+            </div>
+        </div>
+        <a href="our-team.html">
+            <input type="button" value="View All" class="register-btn view-btn">
+        </a>
+     </div>
+
+
+    <div class="our-history-container">
+        <div class="our-history-header">
+            <span>How we achieved recognition</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet sed similique veritatis asperiores aliquam! Hic doloremque harum sint adipisci, impedit odio error dolor consequuntur! Praesentium commodi facilis, magni porro nihil corrupti vitae necessitatibus suscipit nobis omnis aliquid ea numquam soluta!
+            </p>
+        </div>
+        <div class="history-detail">
+            <div class="history-card">
+                <p>
+                    <span>1999.</span> Our start
+                </p>
+              <div class="history-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro officia, consequuntur placeat ut deleniti iure magni doloremque nostrum numquam qui vero ipsam molestiae dolore. Maxime aliquam, maiores neque necessitatibus eaque accusantium beatae illum impedit ut at totam autem ratione repellat.</div>
+            </div>
+            <div class="history-card">
+                <p>
+                    <span>2005..</span> Opening offices
+                </p>
+              <div class="history-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro officia, consequuntur placeat ut deleniti iure magni doloremque nostrum numquam qui vero ipsam molestiae dolore. Maxime aliquam, maiores neque necessitatibus eaque accusantium beatae illum impedit ut at totam autem ratione repellat.</div>
+            </div>
+            <div class="history-card">
+                <p>
+                    <span>2010.</span>Hiring Marketing Experts
+                </p>
+              <div class="history-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro officia, consequuntur placeat ut deleniti iure magni doloremque nostrum numquam qui vero ipsam molestiae dolore. Maxime aliquam, maiores neque necessitatibus eaque accusantium beatae illum impedit ut at totam autem ratione repellat.</div>
+            </div>
+            <div class="history-card">
+                <p>
+                    <span>2018.</span>Better solution for clients
+                </p>
+              <div class="history-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro officia, consequuntur placeat ut deleniti iure magni doloremque nostrum numquam qui vero ipsam molestiae dolore. Maxime aliquam, maiores neque necessitatibus eaque accusantium beatae illum impedit ut at totam autem ratione repellat.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimon-con">
+        <div class="tes-title">Testimonial</div>
+        <div class="tes-header">What users think about us</div>
+        <div class="profile-con">
+            <i class="fa-solid fa-angle-left"></i>
+            <div class="profile-wrap">
+                <img src="asset/photosrc/jake-nackos-IF9TK5Uy-KI-unsplash-compress.jpg">
+                <div class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cum omnis repudiandae optio harum ex, necessitatibus quaerat quas alias unde.
+                </div>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+     </div>
+
     <div class="contact-us">
         <div class="cont-header">
             <i class="fa-solid fa-horizontal-rule"></i>
@@ -82,7 +176,9 @@
             For any enquiries please contact our experts
         </div>
         <div class="cont-btn">
-            <button>Contact Us</button>
+            <a href="contact.html">
+                <button>Contact Us</button>
+            </a>
         </div>
     </div>
     <footer style="border-top: .4rem solid #3375EC;">
@@ -93,15 +189,15 @@
                     <div class="fo-header">
                         Who we are
                     </div>
-                    <div class="footer-links"><a href="##">About us</a></div>
-                    <div class="footer-links"><a href="##">Our Team</a></div>
+                    <div class="footer-links"><a href="aboutus.html">About us</a></div>
+                    <div class="footer-links"><a href="our-team.html">Our Team</a></div>
                 </div>
             </div>
             <div class="row">
                  <div class="fo-header">Quick links</div>
-                 <div class="footer-links"><a href="#">Home</a></div>
-                 <div class="footer-links"><a href="#">Our Services</a></div>
-                 <div class="footer-links"><a href="#">Contacts</a></div>
+                 <div class="footer-links"><a href="index.html">Home</a></div>
+                 <div class="footer-links"><a href="services.html">Our Services</a></div>
+                 <div class="footer-links"><a href="contact.html">Contacts</a></div>
             </div>
             <div class="row">
                 <div class="fo-header">Subscribe Us</div>

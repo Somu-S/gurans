@@ -6,38 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team</title>
     <link rel="stylesheet" href="asset/style.css">
+    <script src="asset/js/index.js"></script>
     <script src="https://kit.fontawesome.com/9cfa251def.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navigation">
-    <img src="asset/photosrc/Logo.png" class="logo" href="index.html">
-    <ul class="nav-ul">
-        <li class="nav-li"><a href="index.html">Home</a></li>
-        <li class="nav-li"><a href="aboutus.html">About Us</a></li>
-        <li class="nav-li"><a href="our-team.html">Our Team</a></li>
-        <li class="nav-li dropdown-btn">
+        <img src="asset/photosrc/Logo.png" class="logo" href="index.html">
+        <ul class="nav-ul">
+            <li class="nav-li"><a href="index.html">Home</a></li>
+            <li class="nav-li"><a href="aboutus.html">About Us</a></li>
+            <li class="nav-li"><a href="our-team.html">Our Team</a></li>
+            <li class="nav-li dropdown-btn">
+                <a href="services.html">Our Services</a>
+                <div class="dropdown-content">
+                    <a href="market.html">Market-analysis</a>
+                    <a href="fund.html">Fund Management</a>
+                    <a href="marketing.html">PR & Marketing</a>
+                    <a href="training.html">Accounting Training</a>
+                    <a href="planning.html">Business planning</a>
+                    <a href="audit.html">Audit</a>
+                    <a href="consultant.html">Consulting</a>
+                    <a href="reg.html">Company Registeraion</a>
+                </div>
+           </li>
+            <li class="nav-li"><a href="contact.html">Contact Us</a></li>
+            <li class="nav-li"><a href="industries.html">Industries</a></li>
+        </ul>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About</a>
             <a href="services.html">Our Services</a>
-            <div class="dropdown-content">
-                <a href="#">Market-analysis</a>
-                <a href="#">Fund Management</a>
-                <a href="#">PR & Marketing</a>
-                <a href="#">Accounting Training</a>
-                <a href="#">Business planning</a>
-                <a href="#">Audit</a>
-                <a href="#">Consulting</a>
-                <a href="#">Company Registeraion</a>
+            <a href="contact.html">Our Contacts</a>
+            <a href="our-team.html">Our Team</a>
+          </div>
+        <div class="nav-btn">
+            <div class="btn">
+                <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
             </div>
-       </li>
-        <li class="nav-li"><a href="contact.html">Contact Us</a></li>
-        <li class="nav-li"><a href="#">Industries</a></li>
-    </ul>
-    <div class="nav-btn">
-        <div class="btn">
-            <i class="fa-solid fa-bars"></i>
+            <a href="signup.html">
+                <button class="sign">sign in</button>
+            </a>
         </div>
-        <button class="sign">sign in</button>
-    </div>
-</nav>
+    </nav>
     <!-- navigation ends here -->
     <div class="banner">
         <div class="banner-header">
@@ -90,15 +101,15 @@
                     <div class="fo-header">
                         Who we are
                     </div>
-                    <div class="footer-links"><a href="##">About us</a></div>
-                    <div class="footer-links"><a href="##">Our Team</a></div>
+                    <div class="footer-links"><a href="aboutus.html">About us</a></div>
+                    <div class="footer-links"><a href="our-team.html">Our Team</a></div>
                 </div>
             </div>
             <div class="row">
                  <div class="fo-header">Quick links</div>
-                 <div class="footer-links"><a href="#">Home</a></div>
-                 <div class="footer-links"><a href="#">Our Services</a></div>
-                 <div class="footer-links"><a href="#">Contacts</a></div>
+                 <div class="footer-links"><a href="index.html">Home</a></div>
+                 <div class="footer-links"><a href="services.html">Our Services</a></div>
+                 <div class="footer-links"><a href="contact.html">Contacts</a></div>
             </div>
             <div class="row">
                 <div class="fo-header">Subscribe Us</div>

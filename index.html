@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurans-Business-consultancy</title>
     <link rel="stylesheet" href="asset/style.css">
+    <script src="asset/js/index.js"></script>
     <script src="https://kit.fontawesome.com/9cfa251def.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,24 +21,34 @@
                     <li class="home nav-li dropdown-btn">
                         <a href="services.html">Our Services</a>
                         <div class="dropdown-content">
-                            <a href="#">Market-analysis</a>
-                            <a href="#">Fund Management</a>
-                            <a href="#">PR & Marketing</a>
-                            <a href="#">Accounting Training</a>
-                            <a href="#">Business planning</a>
-                            <a href="#">Audit</a>
-                            <a href="#">Consulting</a>
-                            <a href="#">Company Registeraion</a>
+                            <a href="market.html">Market-analysis</a>
+                            <a href="fund.html">Fund Management</a>
+                            <a href="marketing.html">PR & Marketing</a>
+                            <a href="training.html">Accounting Training</a>
+                            <a href="planning.html">Business planning</a>
+                            <a href="audit.html">Audit</a>
+                            <a href="consultant.html">Consulting</a>
+                            <a href="reg.html">Company Registeraion</a>
                         </div>
                    </li>
                     <li class="home nav-li"><a href="contact.html">Contact Us</a></li>
-                    <li class="home nav-li"><a href="#">Industries</a></li>
+                    <li class="home nav-li"><a href="industries.html">Industries</a></li>
                 </ul>
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="index.html">Home</a>
+                    <a href="aboutus.html">About</a>
+                    <a href="services.html">Our Services</a>
+                    <a href="contact.html">Our Contacts</a>
+                    <a href="our-team.html">Our Team</a>
+                  </div>
                 <div class="nav-btn">
                     <div class="btn">
-                        <i class="fa-solid fa-bars home"></i>
+                        <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars home"></i></button>
                     </div>
-                    <button class="home sign">sign in</button>
+                    <a href="signup.html">
+                        <button class="home sign">sign in</button>
+                    </a>
                 </div>
             </nav>
             <!-- navigation bar ends here -->
@@ -49,8 +60,12 @@
                         Gurans Business Consultant provides reliable business planning, management, and advisory services backed by years of experience in the industry.
                     </div>
                     <div class="banner-btns">
-                        <input type="button" id="read" value="Read more">
-                        <input type="button" id="contact" value="Contact us">
+                        <a href="aboutus.html">
+                            <input type="button" id="read" value="Read more">
+                        </a>
+                        <a href="contact.html">
+                            <input type="button" id="contact" value="Contact us">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -157,7 +172,9 @@
                     <li class="list">Business advisory experience</li>
                     <li class="list">Reliable company</li>
                 </ul>
-                <input type="button" value="Read more" class="read-btn">
+                <a href="aboutus.html">
+                    <input type="button" value="Read more" class="read-btn">
+                </a>
             </div>
         </div>
         <!-- about ends here -->
@@ -189,7 +206,9 @@
                <div class="our-work-detail">
                 Our team has worked on a wide variety of consulting and management projects since our establishment. Take a look at some of them in our project gallery.
                </div>
-               <input type="button" value="View Gallery" class="read-btn">
+               <a href="ourproject.html">
+                   <input type="button" value="View More" class="read-btn">
+               </a>
             </div>
         </div>
         <!-- what we work on ends here -->
@@ -209,7 +228,9 @@
                 <div class="com-det-two">
                     Get your company registered with Gurans business consultancy in couple of days
                 </div>
-                <input type="button" value="Learn More" class="register-btn">
+                <a href="reg.html">
+                    <input type="button" value="Learn More" class="register-btn">
+                </a>
             </div>
             <div class="c-reg-img"></div>
         </div>
@@ -225,8 +246,12 @@
             <div class="que-txt">Call our expert now and clear any doubts you have regarding the project
             </div>
             <div class="que-btn">
-                <input type="button" value="Call Now" class="register-btn r-btn">
-                <input type="button" value="Send Message" class="register-btn">
+                <a href="contact.html">
+                    <input type="button" value="Call Now" class="register-btn r-btn">
+                </a>
+                <a href="contact.html">
+                    <input type="button" value="Send Message" class="register-btn">
+                </a>
             </div>
         </div>
         <!-- que ends here -->
@@ -266,7 +291,9 @@
                     </ul>
                     <div class="nxt-stp-txt">Take your career to next step with just one Call
                     </div>
-                    <input type="button" value="Call Now" class="read-btn">
+                    <a href="contact.html">
+                        <input type="button" value="Call Now" class="read-btn">
+                    </a>
                 </div>
             </div>
          </div>
@@ -316,7 +343,9 @@
                     <div class="team-pos">Consultant</div>
                 </div>
             </div>
-            <input type="button" value="View All" class="register-btn view-btn">
+            <a href="our-team.html">
+                <input type="button" value="View All" class="register-btn view-btn">
+            </a>
          </div>
          <!-- our team part ends here -->
 
@@ -368,15 +397,15 @@
                          <div class="fo-header">
                              Who we are
                          </div>
-                         <div class="footer-links"><a href="##">About us</a></div>
-                         <div class="footer-links"><a href="##">Our Team</a></div>
+                         <div class="footer-links"><a href="aboutus.html">About us</a></div>
+                         <div class="footer-links"><a href="our-team.html">Our Team</a></div>
                      </div>
                  </div>
                  <div class="row">
                       <div class="fo-header">Quick links</div>
-                      <div class="footer-links"><a href="#">Home</a></div>
-                      <div class="footer-links"><a href="#">Our Services</a></div>
-                      <div class="footer-links"><a href="#">Contacts</a></div>
+                      <div class="footer-links"><a href="index.html">Home</a></div>
+                      <div class="footer-links"><a href="services.html">Our Services</a></div>
+                      <div class="footer-links"><a href="contact.html">Contacts</a></div>
                  </div>
                  <div class="row">
                      <div class="fo-header">Subscribe Us</div>

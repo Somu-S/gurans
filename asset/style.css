@@ -438,7 +438,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2rem 0rem;
+    padding: 4rem 0rem;
 }
 .que-header{
     display: flex;
@@ -446,6 +446,7 @@ header{
     justify-content: center;
     color: white;
     font-size: 2.4rem;
+    gap: 1rem;
 }
 .h-line{
     margin: 0rem;
@@ -578,7 +579,8 @@ header{
 .team-name{
     font-size: 2.2rem;
     color: #262F3C;
-    margin: 1rem auto;
+    margin: auto;
+    margin-top: .5rem;
 }
 .team-pos{
     font-size: 1.4rem;
@@ -1157,6 +1159,10 @@ label{
     font-size: 2.4rem;
     font-weight: 600;
 }
+.table-header{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
 table,td,th{
     border: 1px solid black;
     font-size: 1.6rem;
@@ -1208,7 +1214,7 @@ td,th{
     max-height: 30rem;
 }
 .service-title{
-    font-size: 3.2rem;
+    font-size: 2.4rem;
 }
 .service-detail-txt{
     font-size: 1.6rem;
@@ -1415,6 +1421,87 @@ td,th{
     max-height: 60rem;
 }
 
+.auditbanner{
+    background-image: url(./photosrc/auditingbanner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20rem;
+}
+.audit-con-head{
+    font-size: 3.9rem;
+    color: white;
+}
+.audit-pg-content p{
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    max-width: 70%;
+}
+.audit-pg-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 70%;
+    margin: auto;
+}
+.audit-pg-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 6rem;
+}
+.audit-pg-wrapper span,.audit-pg-wrapper p{
+    font-size: 3.2rem;
+    max-width: 50%;
+    text-align: center;
+}
+.audit-pg-wrapper p{
+    font-size: 1.4rem;
+    color: #8491A5;
+}
+.audit-txt-title{
+    font-size: 1.2rem;
+}
+.believe-bot{
+    display: flex;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+.believe-img img{
+    height: 50rem;
+}
+.what-we-believe{
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+}
+.b-t-header{
+    font-size: 3.9rem;
+    color: #3375ec;
+    font-weight: 600;
+}
+.believe-top p,.bot-1 p{
+    font-size: 1.4rem;
+    color: #2c243b;
+    margin-top: 2rem;
+    text-align: justify;
+}
+.bot-1 span{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #3375EC;
+}
+.believe-content{
+    padding: 2rem;
+}
+.aud-ca-img img{
+    height: 6rem;
+}
+
+
 @media (max-width:768px){
     html{
         font-size: 30%;
@@ -1498,7 +1585,7 @@ td,th{
     .doc-req-detail{
         width: 100%;
     }
-    .our-service-container,.inverse{
+    .our-service-container,.inverse,.what-we-believe{
         flex-direction: column;
     }
     .training-pg-container,.industries-container,.projects-wrapper{
@@ -1510,6 +1597,7 @@ td,th{
     .voice-container{
         flex-direction: column-reverse;
     }
+
 }
 @media (min-width:481px) and (max-width:768px){
     html{
